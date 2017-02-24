@@ -10,9 +10,9 @@ class RedirectController < ApplicationController
 
   def gentsuki_article
     # TODO: :legacy_uidを受け取って、:legacy_uidから記事idを検索して渡して原付改造記事へリダイレクトを行う
-    legacy_uid = params[:legacy_uid]
-    # TODO: GentsukiArticleモデルから検索
-    redirect_to gentsuki_article_path 1
+    id = GentsukiArticle.select(:id).where('legacy_uid', params[:legacy_uid])
+    redirect_to gentsuki_article_path id unless id.blank?
+    redirect_to top_path
   end
 
 end
