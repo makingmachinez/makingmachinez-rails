@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get '/gentsuki', to: 'top#gentsuki', as: 'gentsuki'
   get '/plarail', to: 'top#plarail', as: 'plarail'
 
+  # 静的ページ
+  # TODO: StaticController
+  get '/about', to: 'static#about', as: 'about'
+
   # 原付改造
   # TODO: GentsukiController
   get '/gentsuki/impression', to: 'gentsuki#impression', as: 'gentsuki_impression'
