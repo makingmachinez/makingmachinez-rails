@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   # Redirect
   # TODO: 旧URLをRedirectControllerに飛ばして新URLにリダイレクトさせる
-  get '/archives', to: 'redirect#archives', as: 'archives'
-  get '/spec', to: 'redirect#spec', as: 'spec'
+  get '/archives', to: 'redirect#archives', as: 'redirect_archives'
+  get '/spec', to: 'redirect#spec', as: 'redirect_spec'
+  get '/:yyyy/:mm/:legacy_uid', to: 'redirect#gentsuki_article', as: 'redirect_gentsuki_article', constraints: { yyyy: /\d{4}/, mm: /\d{2}/, legacy_uid: /[a-z0-9\-]+/ }
 
   # Top
   # TODO: TopController
