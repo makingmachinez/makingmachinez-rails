@@ -35,6 +35,7 @@ group :development do
   gem 'pry-doc'
   gem 'pry-stack_explorer'
   gem 'pry-byebug'
+  gem "better_errors"
 end
 
 group :test do
