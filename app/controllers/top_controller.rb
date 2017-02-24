@@ -1,6 +1,15 @@
 class TopController < ApplicationController
 
-  def global_top
-    # TODO: render view
+  def global
+
   end
+
+  def gentsuki
+
+  end
+
+  def plarail
+
+  end
+
 end
