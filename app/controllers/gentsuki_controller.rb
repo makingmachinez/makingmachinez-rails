@@ -5,6 +5,6 @@ class GentsukiController < ApplicationController
   end
 
   def article
-
+    @article = GentsukiArticle.find_by(id: params[:id])
   end
 end
