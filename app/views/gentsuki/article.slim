@@ -2,6 +2,8 @@
   article
     h1
       = @article.title
+    time
+      = @article.created_at
     div
       - if @article.content_type == 'html'
         = sanitize @article.html_content
