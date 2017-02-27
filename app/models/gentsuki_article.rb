@@ -1,2 +1,0 @@
-class GentsukiArticle < ApplicationRecord
-end
