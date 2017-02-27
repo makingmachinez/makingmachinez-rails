@@ -16,7 +16,9 @@ ActiveRecord::Schema.define(version: 20170224163527) do
     t.string "legacy_uid"
     t.string "uid"
     t.string "title", null: false
-    t.text "content", null: false
+    t.string "content_type", null: false
+    t.text "markdown_content"
+    t.text "html_content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

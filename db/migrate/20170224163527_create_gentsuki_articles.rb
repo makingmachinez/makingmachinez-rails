@@ -4,7 +4,9 @@ class CreateGentsukiArticles < ActiveRecord::Migration[5.0]
       t.string :legacy_uid
       t.string :uid
       t.string :title, null: false
-      t.text :content, null: false
+      t.string :content_type, null: false
+      t.text :markdown_content
+      t.text :html_content
 
       t.timestamps null: false
     end
