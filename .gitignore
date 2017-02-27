@@ -44,3 +44,4 @@ bower.json
 .idea/
 /public/packs
 /node_modules
+.DS_Store
