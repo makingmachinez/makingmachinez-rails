@@ -7,3 +7,13 @@
     div
       - if @article.content_type == 'html'
         = sanitize @article.html_content
+  section
+    ul
+      - unless @article.prev.blank?
+        li
+          = link_to gentsuki_article_path @article.prev.id
+            = @article.prev.title
+      - unless @article.next.blank?
+        li
+          = link_to gentsuki_article_path @article.next.id
+            = @article.next.title
