@@ -42,3 +42,5 @@ bower.json
 .byebug_history
 
 .idea/
+/public/packs
+/node_modules
