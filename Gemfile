@@ -13,14 +13,15 @@ gem 'slim-rails', github: 'slim-template/slim-rails'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', github: "rails/webpacker"
-gem 'rb-readline'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'kaminari'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'draper', '3.0.0.pre1'
+gem 'draper', github: "drapergem/draper"
+
+gem 'rb-readline'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
