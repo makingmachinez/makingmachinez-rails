@@ -1,0 +1,17 @@
+ruby:
+  set_meta_tags charset: 'utf-8'
+
+  set_meta_tags title: Settings.site_information.description, site: @og_site
+  set_meta_tags viewport: 'width=device-width, initial-scale=1'
+  set_meta_tags og: {
+                        title: @og_site,
+                        type: @og_type || 'website',
+                        url: @og_url,
+                        image: @og_image || asset_url('og.png'),
+                        description: @og_description
+                }
+  set_meta_tags description: @og_description.presence || Settings.site_information.description
+  set_meta_tags copyright: Settings.site_information.author.name
+  set_meta_tags canonical: @og_url
+
+= display_meta_tags

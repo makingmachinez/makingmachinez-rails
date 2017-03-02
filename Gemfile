@@ -24,6 +24,9 @@ gem 'draper', github: "drapergem/draper"
 
 gem 'rb-readline'
 
+gem 'config'
+gem 'meta-tags'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.7.0'
