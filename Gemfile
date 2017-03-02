@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'kaminari'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem "font-awesome-rails"
 gem 'draper', github: "drapergem/draper"
 
 gem 'rb-readline'
