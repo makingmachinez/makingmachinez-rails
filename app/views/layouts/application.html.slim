@@ -8,4 +8,30 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = yield
+    nav.navbar.navbar-default.navbar-fixed-top role="navigation"
+      .container
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed data-target="#bs-nav" data-toggle="collapse" type="button"
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            = link_to top_path, class: 'navbar-brand'
+              h1.logo
+                .hidden
+                  = Settings.site_information.title
+              p.hidden
+                = Settings.site_information.description
+          #bs-nav.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              = active_link_to gentsuki_path, wrap_tag: 'li'
+                | 原付改造
+              = active_link_to plarail_path, wrap_tag: 'li'
+                | プラレール改造
+              = active_link_to about_path, wrap_tag: 'li'
+                | あばうつ
+    section
+      .global-container
+        .container
+          = yield

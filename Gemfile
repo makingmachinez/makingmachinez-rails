@@ -26,6 +26,7 @@ gem 'rb-readline'
 
 gem 'config'
 gem 'meta-tags'
+gem 'active_link_to'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
