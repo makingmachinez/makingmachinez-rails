@@ -4,3 +4,22 @@
     color: $panel-about-title
   .panel-body
     background-color: $panel-about-body
+    &:first-child
+      border-top-left-radius: $panel-border-radius
+      border-top-right-radius: $panel-border-radius
+    &:last-child
+      border-bottom-left-radius: $panel-border-radius
+      border-bottom-right-radius: $panel-border-radius
+
+.panel-alert
+  +panel-variant($panel-alert-border, $panel-alert-text, $panel-alert-heading-bg, $panel-alert-border)
+  .panel-title
+    color: $panel-alert-title
+  .panel-body
+    background-color: $panel-alert-body
+    &:first-child
+      border-top-left-radius: $panel-border-radius
+      border-top-right-radius: $panel-border-radius
+    &:last-child
+      border-bottom-left-radius: $panel-border-radius
+      border-bottom-right-radius: $panel-border-radius
