@@ -1,10 +1,22 @@
 .navbar-default
-  background: linear-gradient(to top, $navbar-default-bg 0%, $navbar-default-bg 60%, lighten($navbar-default-bg, 30%) 100%)
+  background: linear-gradient(to top, $navbar-default-bg 0%, lighten($navbar-default-bg, 20%) 100%)
   border-color: $navbar-default-border
 
-  .navbar-brand
-    color: $navbar-default-brand-color
-    &:hover,
-    &:focus
-      color: $navbar-default-brand-hover-color
-      background-color: $navbar-default-brand-hover-bg
+.navbar-nav
+  > li.active
+    > a.active
+      &.navbar-gentsuki
+        background-color: $panel-gentsuki-body
+      &.navbar-plarail
+        background-color: $panel-plarail-body
+      &.navbar-about
+        background-color: $panel-about-body
+
+  > li
+    > a:hover
+      &.navbar-gentsuki
+        background-color: $panel-gentsuki-body
+      &.navbar-plarail
+        background-color: $panel-plarail-body
+      &.navbar-about
+        background-color: $panel-about-body

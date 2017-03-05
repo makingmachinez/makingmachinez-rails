@@ -25,12 +25,12 @@ html
                 = Settings.site_information.description
           #bs-nav.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-left
-              = active_link_to gentsuki_path, wrap_tag: 'li'
+              = active_link_to gentsuki_path, wrap_tag: 'li', class: 'navbar-gentsuki'
                 | 原付改造
-              = active_link_to plarail_path, wrap_tag: 'li'
+              = active_link_to plarail_path, wrap_tag: 'li', class: 'navbar-plarail'
                 | プラレール改造
             ul.nav.navbar-nav.navbar-right
-              = active_link_to about_path, wrap_tag: 'li'
+              = active_link_to about_path, wrap_tag: 'li', class: 'navbar-about'
                 | あばうつ
     section
       .global-container
