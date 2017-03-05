@@ -1,9 +1,5 @@
-.panel-about
-  +panel-variant($panel-about-border, $panel-about-text, $panel-about-heading-bg, $panel-about-border)
-  .panel-title
-    color: $panel-about-title
+.panel
   .panel-body
-    background-color: $panel-about-body
     &:first-child
       border-top-left-radius: $panel-border-radius
       border-top-right-radius: $panel-border-radius
@@ -11,15 +7,30 @@
       border-bottom-left-radius: $panel-border-radius
       border-bottom-right-radius: $panel-border-radius
 
+.panel-about
+  +panel-variant($panel-about-border, $panel-about-text, $panel-about-heading-bg, $panel-about-border)
+  .panel-title
+    color: $panel-about-title
+  .panel-body
+    background-color: $panel-about-body
+
 .panel-alert
   +panel-variant($panel-alert-border, $panel-alert-text, $panel-alert-heading-bg, $panel-alert-border)
   .panel-title
     color: $panel-alert-title
   .panel-body
     background-color: $panel-alert-body
-    &:first-child
-      border-top-left-radius: $panel-border-radius
-      border-top-right-radius: $panel-border-radius
-    &:last-child
-      border-bottom-left-radius: $panel-border-radius
-      border-bottom-right-radius: $panel-border-radius
+
+.panel-gentsuki
+  +panel-variant($panel-gentsuki-border, $panel-gentsuki-text, $panel-gentsuki-heading-bg, $panel-gentsuki-border)
+  .panel-title
+    color: $panel-gentsuki-title
+  .panel-body
+    background-color: $panel-gentsuki-body
+
+.panel-plarail
+  +panel-variant($panel-plarail-border, $panel-plarail-text, $panel-plarail-heading-bg, $panel-plarail-border)
+  .panel-title
+    color: $panel-plarail-title
+  .panel-body
+    background-color: $panel-plarail-body
