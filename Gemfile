@@ -13,6 +13,7 @@ gem 'slim-rails', github: 'slim-template/slim-rails'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', github: "rails/webpacker"
+gem 'jquery-rails'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
